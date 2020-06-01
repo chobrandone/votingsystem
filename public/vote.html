@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body class="container">
+     <h1 class="text-center">voting management system </h1>
+        
+    <form action="/addvote" method="POST" class="container bg-dark text-light">
+          <div class="form-group ">
+            <label for="Name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Name" name="newstudent">
+          </div>
+         
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="dateofbirth">dateofbirth</label>
+                <input type="date" class="form-control" id="dateofbirth" placeholder="" name="newstudent">
+              </div>
+            <div class="form-group col-md-6">
+              <label for="placeofbirth">place of birth</label>
+              <input type="text" class="form-control" id="place" placeholder="placeofbirth" name="newstudent">
+            </div>
+          </div>
+          <label for="" class="pr-5">Gender</label>
+          <div class="form-check form-check-inline ">
+            <input class="form-check-input  " type="radio" name="gender" id="gender" value="option1" name="newstudent">
+            <label class="form-check-label " for="male">male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="gender" value="option2" name="newstudent">
+            <label class="form-check-label" for="female">female</label>
+          </div>
+       
+        <div class="form-group">
+          <label for="CNIC">CNIC</label>
+          <input type="text" class="form-control" id="CNIC" placeholder="idcard number" name="newstudent">
+        </div>
+       
+          <div class="form-group col-md-4">
+            <label for="inputState">political party</label>
+            <select id="inputState" class="form-control" name="newstudent">
+              <option selected>Choose...</option>
+              <option>YYDM</option>
+              <option>NFMC</option>
+              <option>EEU</option>
+              <option>LNWWM</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip" name="newstudent">
+          </div>
+        </div>
+      
+        <button type="submit" class="btn btn-primary">vote</button>
+        <button type="submit"  class="btn btn-primary">UPDATE</button>
+        <button type="submit" class="btn btn-primary">DELETE</button>
+        <button type="submit" class="btn btn-primary">VIEW</button>
+      </form>
+    </fieldset>
+      
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="../list.js"></script>
+</html>
